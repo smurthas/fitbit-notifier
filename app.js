@@ -10,7 +10,7 @@ if (!( env.TW_ACCT_SID && env.TW_AUTH_TOKEN
 var request = require('request');
 var twClient = require('twilio')(env.TW_ACCT_SID,
                                  env.TW_AUTH_TOKEN);
-
+var express = require('express');
 
 var previous;
 var url = 'https://api.singly.com/services/fitbit/devices'
@@ -57,3 +57,11 @@ function sendSMS(callback) {
     body: 'Your FitBit Tracker is low!'
   }, callback);
 }
+
+var app = express();
+
+app.get('/', function(req, res) {
+  res.send(previous);
+});
+
+app.listen(env.PORT);
