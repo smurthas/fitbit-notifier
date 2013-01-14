@@ -1,0 +1,16 @@
+{
+  "name": "fitbit-notifier",
+  "version": "0.0.0",
+  "description": "notify me when my fitbit battery is low",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Simon Murtha-Smith <simon@murtha-smith.com>",
+  "license": "BSD",
+  "dependencies": {
+    "request":"",
+    "twilio":""
+  }
+}
