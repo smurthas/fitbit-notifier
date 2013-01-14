@@ -11,6 +11,6 @@
   "license": "BSD",
   "dependencies": {
     "request":"",
-    "twilio":""
+    "twilio":"https://github.com/kwhinnery/twilio-node/tarball/master"
   }
 }
