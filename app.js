@@ -64,4 +64,6 @@ app.get('/', function(req, res) {
   res.send(previous);
 });
 
-app.listen(env.PORT);
+app.listen(env.PORT, function(err) {
+  console.log('alive on port', env.PORT);
+});
